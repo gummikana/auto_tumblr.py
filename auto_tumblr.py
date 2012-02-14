@@ -133,9 +133,6 @@ class AutoTumblr:
         foo = os.walk( TUMBLR_DIR )
         for data in foo:
             (dirpath, dirnames, filenames) = data
-	    for d in dirnames:
-		print d
-		
             for f in filenames :
                 ext = f.lower().split(".")[-1]
                 if ( ext == "jpg" or ext == "gif" or ext == "png" or ext == "txt" ):
